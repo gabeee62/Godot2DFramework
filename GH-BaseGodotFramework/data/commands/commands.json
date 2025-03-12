@@ -1,0 +1,17 @@
+{
+"help": {
+	"HELPMESSAGE": "HELP HELP"
+	},
+"mode": {
+	"HELPMESSAGE": "MODE HELP"
+	},
+"name": {
+	"HELPMESSAGE": "NAME HELP"
+	},
+"summon": {
+	"HELPMESSAGE": "SUMMON HELP"
+	},
+"say": {
+	"HELPMESSAGE": "SAY HELP"
+	}
+}

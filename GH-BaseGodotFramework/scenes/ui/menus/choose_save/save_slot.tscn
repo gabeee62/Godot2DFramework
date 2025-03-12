@@ -1,0 +1,88 @@
+[gd_scene load_steps=8 format=3 uid="uid://y4negy0qpgx1"]
+
+[ext_resource type="Script" uid="uid://bb2s1uwqnr0t0" path="res://scenes/ui/menus/choose_save/save_slot.gd" id="1_r3v32"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3v32"]
+content_margin_left = 1.0
+content_margin_top = 1.0
+content_margin_right = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_r3v32"]
+font_size = 24
+font_color = Color(1, 1, 0, 1)
+shadow_size = 6
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_byjf0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5qskc"]
+font_color = Color(0.529067, 0.529067, 0.529067, 1)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_myhne"]
+font_color = Color(0.622285, 0.211775, 0.311936, 1)
+outline_size = 5
+outline_color = Color(0.470588, 0, 0.254902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1wbmn"]
+font_color = Color(0.14902, 0.419608, 0.54902, 1)
+outline_size = 5
+outline_color = Color(0.729412, 1, 0.737255, 1)
+
+[node name="SaveSlot" type="PanelContainer"]
+custom_minimum_size = Vector2(360, 40)
+theme_override_styles/panel = SubResource("StyleBoxFlat_r3v32")
+script = ExtResource("1_r3v32")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="SaveName" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+label_settings = SubResource("LabelSettings_r3v32")
+vertical_alignment = 1
+
+[node name="Playtime" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_byjf0")
+vertical_alignment = 2
+
+[node name="PlayerName" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+label_settings = SubResource("LabelSettings_5qskc")
+horizontal_alignment = 2
+
+[node name="DisplayStat1" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_myhne")
+
+[node name="DisplayStat2" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_1wbmn")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
