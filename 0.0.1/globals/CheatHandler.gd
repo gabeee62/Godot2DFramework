@@ -44,8 +44,7 @@ func split_command(text: String) -> Array:
 
 
 func help(args: Array[String]):
-	
-	print(JSON.parse_string(FileAccess.get_file_as_string("res://data/commands/commands.json"))[args[0]]["HELPMESSAGE"])
+	print(FileAccess.get_file_as_string("res://manual/help/" + JSON.parse_string(FileAccess.get_file_as_string("res://data/commands/commands.json"))[args[0]]["HELPMESSAGE"] + ".txt"))
 
 
 func change_game_mode(args: Array[String]):
