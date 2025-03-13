@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SettingsData" load_steps=2 format=3 uid="uid://dm8dkb5vjowsr"]
+
+[ext_resource type="Script" uid="uid://dmnpxqogdo3ik" path="res://data/saves/settings/SettingsData.gd" id="1_fpb73"]
+
+[resource]
+script = ExtResource("1_fpb73")
+fps_limit = 0
+brightness = 50
+master_volume = 100
+music_volume = 80
+menu_music_volume = 80
+sfx_volume = 100
+metadata/_custom_type_script = "uid://dmnpxqogdo3ik"

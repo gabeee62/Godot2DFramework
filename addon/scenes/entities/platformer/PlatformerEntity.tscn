@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://37abh0py57wb"]
+
+[ext_resource type="Script" uid="uid://cme2tc1q6u4kw" path="res://scenes/entities/platformer/PlatformerEntity.gd" id="1_ejoga"]
+
+[node name="PlatformerEntity" type="CharacterBody2D"]
+script = ExtResource("1_ejoga")

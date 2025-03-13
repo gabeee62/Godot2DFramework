@@ -16,6 +16,14 @@
         "visibility": 0.0
       }
     },
+    "res://saves/": {
+      "resource_local_to_scene": {
+        "visibility": 0.0
+      },
+      "resource_name": {
+        "visibility": 0.0
+      }
+    },
     "res://saves/default/": {
       "filename": {
         "visibility": 0.0
@@ -34,11 +42,21 @@
       "resource_name": {
         "visibility": 0.0
       }
+    },
+    "res://saves/gabe1/": {
+      "resource_local_to_scene": {
+        "visibility": 0.0
+      },
+      "resource_name": {
+        "visibility": 0.0
+      }
     }
   },
   "recent_paths": [
     "res://saves/default/",
-    "res://saves/default/level_data/"
+    "res://saves/default/level_data/",
+    "res://saves/",
+    "res://saves/gabe1/"
   ],
   "table_functions": {
     "filter": [
