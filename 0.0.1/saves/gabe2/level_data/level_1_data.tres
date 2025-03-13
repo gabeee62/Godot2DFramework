@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/levels/LevelData.gd" id="1_hi63x"]
+
+[resource]
+script = ExtResource("1_hi63x")
+filename = "level_1"
+level_name = "Plains"
+level_desc = "The first level."
+game_type = 0
+look_type = 0
+cheats = false
+metadata/_custom_type_script = "uid://dkvaslmjg3r4x"

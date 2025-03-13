@@ -49,6 +49,10 @@ window/size/viewport_height=720
 
 enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/resources_spreadsheet_view/plugin.cfg")
 
+[global_group]
+
+Utility=""
+
 [input]
 
 UP={

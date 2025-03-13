@@ -1,7 +1,0 @@
--- COMMAND HELP: MODE
-
-ACCEPTED ARGS (1):
-	s: changes game mode to "survival"
-	c: changes game mode to "creative"
-
-OPTIONS: NONE
